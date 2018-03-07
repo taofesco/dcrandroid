@@ -10,14 +10,3 @@ matrix
     install:
     - dep ensure -v
     - gomobile bind -target=android/arm
-    - language: android
-    android:
-      components:
-        - tools
-        - platform-tools
-        - build-tools-26.0.2
-        - android-27
-        - extra-android-m2repository
-        - extra-google-m2repository
-    before_install:
-      - yes | sdkmanager "platforms;android-27"
